@@ -96,15 +96,47 @@ header {
     margin: 0 auto;
 }
 
-
 .number-01 {
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    border: 1px solid #87879D;
+    border: 1px solid rgba(135, 135, 157, 0.25);
     display: inline-block;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+
+    font-size: 1rem;
+    color: #87879D;
+    font-weight: 900;
+
+    position: relative;
+    margin-top: 144px;
+}
+
+.number-01::after {
+    content: "";
+    position: absolute;
+    height: 84px;
+    border-left: 1px solid rgba(135, 135, 157, 0.25);
+    bottom: 55px;
+}
+
+.path-draw {
+    margin-bottom: 4rem;
+}
+
+.images-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(151px, 1fr));
+    grid-gap: 24px;
+
+    padding-bottom: 4rem;
+}
+
+.images-container > img {
+    border-radius: 8px;
+    width: 151px;
     margin: 0 auto;
 }
