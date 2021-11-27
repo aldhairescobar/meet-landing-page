@@ -96,26 +96,27 @@ header {
     margin: 0 auto;
 }
 
-.number-01 {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    border: 1px solid rgba(135, 135, 157, 0.25);
+.number-01, 
+.number-02 {
     display: inline-block;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 1px solid rgba(135, 135, 157, 0.25);
 
     font-size: 1rem;
     color: #87879D;
     font-weight: 900;
-
     position: relative;
     margin-top: 144px;
 }
 
-.number-01::after {
+.number-01::after,
+.number-02::after {
     content: "";
     position: absolute;
     height: 84px;
@@ -131,12 +132,42 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(151px, 1fr));
     grid-gap: 24px;
-
     padding-bottom: 4rem;
 }
 
 .images-container > img {
     border-radius: 8px;
-    width: 151px;
     margin: 0 auto;
+}
+
+
+.features-container > h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #4D96A9;
+    letter-spacing: 4px;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+}
+
+.features-container > h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #28283D;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    line-height: 2.25rem;
+}
+
+.features-container > p {
+    color: #87879D;
+    line-height: 1.625;
+    margin-bottom: 4rem;
+    margin-top: 0;
+}
+
+.footer {
+    background-image: linear-gradient(0deg, rgba(77, 150, 169, 0.9), rgba(77, 150, 169, 0.9)), url(../assets/mobile/image-footer.jpg);
+    background-size: cover;
 }
