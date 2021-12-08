@@ -342,6 +342,69 @@ header {
         padding: 7.25rem 0 6.5rem;
     }
 
+
+    .hero-left-wrapper {
+        width: 25.13%;
+        overflow: hidden;
+    }
+
+    .hero-left {
+        min-width: 108%;
+        object-fit: cover;
+        margin-left: -30px;
+    }
+
+    .hero-right-wrapper {
+        width: 25.13%;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .hero-right {
+        min-width: 108%;
+        object-fit: cover;
+        align-self: flex-end;
+    }
+
+    .btn-primary {
+        margin-bottom: 0;
+    }
+
+    .header-container {
+        margin: 0;
+        width: 37.5%;
+        max-width: 540px;
+    }
+
+    .number-01 {
+        margin-top: 12.125rem;
+    }
+
+    /* 
+
+    25.13%
+
+    88px
     
+    37.5%
+
+    88px
+
+    25.13%
+
+    */
+
+    /* .hero-full-wrapper {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 3rem;
+    }
+    
+    .hero-full {
+        min-width: 111%;
+        object-fit: cover;
+        margin-left: -22px;
+    } */
     
 }
