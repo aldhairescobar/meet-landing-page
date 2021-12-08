@@ -278,6 +278,22 @@ header {
 
 @media (min-width: 1200px) {
 
+    header {
+        margin: 5rem 0 3.8125rem 0;
+    }
+
+    h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+        margin-top: 2.9375rem;
+        margin-bottom: 2.125rem;
+    }
+
+    .main-description {
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+    }
+
     .hero-full-wrapper {
         display: none;
     }
@@ -325,5 +341,7 @@ header {
         background-position: center;
         padding: 7.25rem 0 6.5rem;
     }
+
+    
     
 }
