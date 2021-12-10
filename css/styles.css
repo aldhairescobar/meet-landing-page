@@ -83,6 +83,10 @@ h2, h3 {
     transition: background-color 250ms;
 }
 
+.btn-secondary-footer {
+    padding: 1em 2.5em;
+}
+
 .btn-secondary:hover,
 .btn-secondary:focus {
     background-color: #B18BDD;
@@ -319,6 +323,7 @@ header {
         margin: 0 auto;
         gap: 30px;
         grid-template-columns: auto auto auto auto;
+        padding-bottom: 80px;
     }
 
     .footer-container {
@@ -346,12 +351,15 @@ header {
     .hero-left-wrapper {
         width: 25.13%;
         overflow: hidden;
+        display: flex;
+        align-items: flex-start;
     }
 
     .hero-left {
         min-width: 108%;
         object-fit: cover;
         margin-left: -30px;
+        align-self: center;
     }
 
     .hero-right-wrapper {
@@ -364,7 +372,7 @@ header {
     .hero-right {
         min-width: 108%;
         object-fit: cover;
-        align-self: flex-end;
+        align-self: center;
     }
 
     .btn-primary {
@@ -381,30 +389,25 @@ header {
         margin-top: 12.125rem;
     }
 
-    /* 
+    .features-container {
+        max-width: 515px;
+    }
 
-    25.13%
-
-    88px
-    
-    37.5%
-
-    88px
-
-    25.13%
-
-    */
-
-    /* .hero-full-wrapper {
-        width: 100%;
-        overflow: hidden;
-        margin-bottom: 3rem;
+    .features-container > p {
+        font-size: 1.125rem;
+        line-height: 1.625rem;
     }
     
-    .hero-full {
-        min-width: 111%;
-        object-fit: cover;
-        margin-left: -22px;
-    } */
-    
+}
+
+@media (min-width: 1400px) {
+
+    .hero-left {
+        align-self: flex-start;
+    }
+
+    .hero-right {
+        align-self: flex-end;
+    }
+
 }
