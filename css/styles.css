@@ -44,6 +44,44 @@ h2, h3 {
     display: none;
 }
 
+.features-container > h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #4D96A9;
+    letter-spacing: 4px;
+    margin-bottom: 1.5rem;
+}
+
+.features-container > h2 {
+    font-size: 2rem;
+    color: #28283D;
+    margin-bottom: 2rem;
+    line-height: 2.25rem;
+}
+
+.features-container > p {
+    color: #87879D;
+    line-height: 1.625;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.footer-container > h2 {
+    color: #FAFAFA;
+    font-size: 2rem;
+    line-height: 2.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-container > p {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    font-weight: 500;
+    color: #FAFAFA;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
 /* === Buttons === */
 
 .btn {
@@ -169,28 +207,6 @@ header {
     margin: 0 auto;
 }
 
-.features-container > h3 {
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: #4D96A9;
-    letter-spacing: 4px;
-    margin-bottom: 1.5rem;
-}
-
-.features-container > h2 {
-    font-size: 2rem;
-    color: #28283D;
-    margin-bottom: 2rem;
-    line-height: 2.25rem;
-}
-
-.features-container > p {
-    color: #87879D;
-    line-height: 1.625;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-
 .footer {
     background-image: linear-gradient(0deg, rgba(77, 150, 169, 0.9), rgba(77, 150, 169, 0.9)), url(../assets/mobile/image-footer.jpg);
     background-size: cover;
@@ -200,22 +216,6 @@ header {
 .footer-container {
     margin: 0 auto;
     padding: 0 24px;
-}
-
-.footer-container > h2 {
-    color: #FAFAFA;
-    font-size: 2rem;
-    line-height: 2.25rem;
-    margin-bottom: 1.5rem;
-}
-
-.footer-container > p {
-    font-size: 1.125rem;
-    line-height: 1.625rem;
-    font-weight: 500;
-    color: #FAFAFA;
-    margin-top: 0;
-    margin-bottom: 2rem;
 }
 
 @media (min-width: 500px) {
@@ -293,20 +293,40 @@ header {
         margin-bottom: 2.125rem;
     }
 
-    .main-description {
+    .main-description,
+    .features-container > p {
         font-size: 1.125rem;
         line-height: 1.625rem;
+    }
+
+    .btn-primary {
+        margin-bottom: 0;
     }
 
     .hero-full-wrapper {
         display: none;
     }
 
+    .hero-left-wrapper,
+    .hero-right-wrapper {
+        width: 25.13%;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-start;
+    }
+
     .hero-left,
     .hero-right {
         display: block;
+        object-fit: cover;
+        align-self: center;
+        min-width: 108%;
     }
 
+    .hero-left {
+        margin-left: -30px;
+    }
+    
     .hero-container {
         display: flex;
         margin: 0 auto;
@@ -316,6 +336,16 @@ header {
 
     .header-container {
         margin: 0 1rem;
+        width: 37.5%;
+        max-width: 540px;
+    }
+
+    .number-01 {
+        margin-top: 12.125rem;
+    }
+
+    .features-container {
+        max-width: 515px;
     }
 
     .images-container {
@@ -324,6 +354,12 @@ header {
         gap: 30px;
         grid-template-columns: auto auto auto auto;
         padding-bottom: 80px;
+    }
+
+    .footer {
+        background-image: linear-gradient(0deg, rgba(77, 150, 169, 0.9), rgba(77, 150, 169, 0.9)), url(../assets/desktop/image-footer.jpg);
+        background-position: center;
+        padding: 7.25rem 0 6.5rem;
     }
 
     .footer-container {
@@ -339,64 +375,7 @@ header {
         text-align: left;
         max-width: 350px;
         margin-bottom: 0;
-    }
-
-    .footer {
-        background-image: linear-gradient(0deg, rgba(77, 150, 169, 0.9), rgba(77, 150, 169, 0.9)), url(../assets/desktop/image-footer.jpg);
-        background-position: center;
-        padding: 7.25rem 0 6.5rem;
-    }
-
-
-    .hero-left-wrapper {
-        width: 25.13%;
-        overflow: hidden;
-        display: flex;
-        align-items: flex-start;
-    }
-
-    .hero-left {
-        min-width: 108%;
-        object-fit: cover;
-        margin-left: -30px;
-        align-self: center;
-    }
-
-    .hero-right-wrapper {
-        width: 25.13%;
-        overflow: hidden;
-        display: flex;
-        align-items: flex-start;
-    }
-
-    .hero-right {
-        min-width: 108%;
-        object-fit: cover;
-        align-self: center;
-    }
-
-    .btn-primary {
-        margin-bottom: 0;
-    }
-
-    .header-container {
-        margin: 0;
-        width: 37.5%;
-        max-width: 540px;
-    }
-
-    .number-01 {
-        margin-top: 12.125rem;
-    }
-
-    .features-container {
-        max-width: 515px;
-    }
-
-    .features-container > p {
-        font-size: 1.125rem;
-        line-height: 1.625rem;
-    }
+    }     
     
 }
 
