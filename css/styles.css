@@ -28,7 +28,11 @@ h1 {
     margin-bottom: 1.5rem;
 }
 
-h2, h3 {
+.features-sub-header {
+    display: block;
+}
+
+h2, .features-sub-header {
     margin-top: 0;
     font-weight: 900;
 }
@@ -44,7 +48,7 @@ h2, h3 {
     display: none;
 }
 
-.features-container > h3 {
+.features-container > .features-sub-header {
     font-size: 1rem;
     text-transform: uppercase;
     color: #4D96A9;
@@ -155,6 +159,10 @@ header {
 
 .container {
     width: 88%;
+    margin: 0 auto;
+}
+
+.features-container {
     margin: 0 auto;
 }
 
